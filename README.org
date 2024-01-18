@@ -1,0 +1,6 @@
+* PEDOFETCH
+
+> It stands to "Powerful, Extensible, Desktop-Overwhelming Fetch"
+
+This is a rewound concept of fetches, but with a twist.
+
