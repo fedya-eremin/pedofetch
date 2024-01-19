@@ -22,9 +22,15 @@ impl fmt::Display for PedofetchError {
 }
 
 struct Block {
+    /// right upper corner for block
     ru: TermCoord,
+    /// left bottom corner for block
     lb: TermCoord,
-    command: String,
+    /// optional command for block
+    command: Option<String>,
+    /// optional contents for block
+    contents: Option<Vec<String>>,
+    /// whether block should be wrapped
     wrap: bool,
 }
 

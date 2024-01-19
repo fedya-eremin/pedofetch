@@ -1,6 +1,7 @@
 * PEDOFETCH
-
-> It stands to "Powerful, Extensible, Desktop-Overwhelming Fetch"
-
-This is a rewound concept of fetches, but with a twist.
+  #+BEGIN_QUOTE
+  > It stands to "Powerful, Extensible, Desktop-Overwhelming Fetch"
+  #+END_QUOTE
+  
+  This is a rewound _concept_ of fetches, but with a twist.
 
