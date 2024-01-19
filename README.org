@@ -5,3 +5,22 @@
   
   This is a rewound _concept_ of fetches, but with a twist.
 
+
+* TODO
+    - [ ] Реализовать структуру Command с полями:
+        - name
+        - args
+        - timeout - таймаут для асинхронного обновления
+        - trail - последовательное чтение из stout (bool)
+        - block RefCell<Block> - обратная ссылка на блок
+        - .run() - запуск команды и запись вывода в Command.block.contents
+            (потенциально могут возникнуть проблемы с лайфтаймами)
+        ...
+        - [ ] Перенести флаг wraps из Block в Command
+    - [ ] Реализовать структуру Config, которая будет хранить данные о Blocks.
+        - blocks Vec<Block>
+        - timeout - общий timeout для перерисовки терминала
+        - .parse_config(filename) - парсинг toml конфига и заполнения структур
+    - [ ] Driver должен отрисовывать все Config.blocks в терминале с таймаутом Config.timeout
+        и запускать команды в Config.blocks[block].command.run() асинхронно
+
